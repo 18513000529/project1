@@ -12,4 +12,7 @@ for(var i=0;i<oLi.length;i++){
         }
         obox[this.index].style.display='block';
     }
+    function a(){
+    	console.log(1)
+    }
 }

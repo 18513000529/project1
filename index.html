@@ -5,14 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .list{
+            width:400px;
+            height:400px;
+            background:gray;
+            list-style:none;
+        }
+        .list li{
+            width:80px;
+            height:80px;
+            background:green;
+            text-align:center;
+            line-height:80px;
+            color:red;
+            font-size:18px;
+            float:left;
+            margin-left:40px;
+        }
+        .active{
+            background:#999;
+            color:orange;
+        }
+        .option{
+            position:absolute;
+            top:90px;
+            font-size:30px;
+        }
+        .option li{
+            width:388px;
+            height:200px;
+            border:1px solid black;
+            position:absolute;
+            top:0;
+            left:0;
+            display:none;
+        }
+        .option li:first-child{
+            display:block;
+        }
+    </style>
 </head>
 <body>
     <div id="box">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="option">
+            <li>第一项</li>
+            <li>第二项</li>
+            <li>第三项</li>
+        </ul>
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
         </ul>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
